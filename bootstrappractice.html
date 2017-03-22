@@ -430,3 +430,31 @@ Nest all your checkboxes in a <div class="row"> element. Then nest each of them 
  </form>
 </div>
 </div>
+
+////Style Text Inputs as Form Controls
+
+You can add the fa-paper-plane Font Awesome icon by adding <i class="fa fa-paper-plane"></i> within your submit button element.
+
+Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
+
+<div class="row">
+  <div class="col-xs-6">
+    <label><input class="form-control" type="radio" name="indoor-outdoor"> Indoor</label>
+  </div>
+  <div class="col-xs-6">
+    <label><input  class = "form-control"type="radio" name="indoor-outdoor"> Outdoor</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-4">
+    <label><input class="form-control" type="checkbox" name="personality"> Loving</label>
+  </div>
+  <div class="col-xs-4">
+    <label><input class="form-control" type="checkbox" name="personality"> Lazy</label>
+  </div>
+  <div class="col-xs-4">
+    <label><input class="form-control" type="checkbox" name="personality"> Crazy</label>
+  </div>
+</div>
+<input class="form-control" type="text" placeholder="cat photo URL" required>
+<button class="btn btn-primary"><i class ="fa fa-paper-plane"></i>Submit </button>
