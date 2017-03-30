@@ -96,22 +96,21 @@ Target HTML Elements with Selectors Using jQuery
 
 Target Elements by Class Using jQuery
 
+---------------------------------------------
+You see how we made all of your button elements bounce? We selected them with $("button"), then we added some CSS classes to them with .addClass("animated bounce");.
 
-// You see how we made all of your button elements bounce? We selected them with $("button"), then we added some CSS classes to them with .addClass("animated bounce");.
-//
-// You just used jQuery's .addClass() function, which allows you to add classes to elements.
-//
-// First, let's target your div elements with the class well by using the $(".well") selector.
-//
-// Note that, just like with CSS declarations, you type a . before the class's name.
-//
-// Then use jQuery's .addClass() function to add the classes animated and shake.
-//
-// For example, you could make all the elements with the class text-primary shake by adding the following to your document ready function:
-//
-// $(".text-primary").addClass("animated shake");
+You just used jQuery's .addClass() function, which allows you to add classes to elements.
 
+First, let's target your div elements with the class well by using the $(".well") selector.
 
+Note that, just like with CSS declarations, you type a . before the class's name.
+
+Then use jQuery's .addClass() function to add the classes animated and shake.
+
+For example, you could make all the elements with the class text-primary shake by adding the following to your document ready function:
+
+$(".text-primary").addClass("animated shake");
+-------------------------------------------------------------
 
 <script>
   $(document).ready(function() {
@@ -119,3 +118,33 @@ Target Elements by Class Using jQuery
     $(".well").addClass("animated shake");
   });
 </script>
+
+-------------------------------------------------------------------
+Target Elements by ID Using jQuery
+----------------------------------------
+
+You can also target elements by their id attributes.
+
+First target your button element with the id target3 by using the $("#target3") selector.
+
+Note that, just like with CSS declarations, you type a # before the id's name.
+
+Then use jQuery's .addClass() function to add the classes animated and fadeOut.
+
+Here's how you'd make the button element with the id target6 fade out:
+
+$("#target6").addClass("animated fadeOut").
+
+----------------------------------------------------------------
+
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+    $("#target3").addClass("animated fadeOut");
+
+  });
+</script>
+
+
+----------------------------------------------------------------------
