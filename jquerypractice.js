@@ -387,3 +387,31 @@ Give the parent of the #target1 element a background-color of red.
 </script>
 
 -------------------------------------------------------------------
+Target the Children of an Element Using jQuery
+-------------------------------------------------------------
+Many HTML elements have children which inherit their properties from their parent HTML elements.
+
+For example, every HTML element is a child of your body element, and your "jQuery Playground" h3 element is a child of your <div class="container-fluid"> element.
+
+jQuery has a function called children() that allows you to access the children of whichever element you've selected.
+
+Here's an example of how you would use the children() function to give the children of your left-well element the color of blue:
+
+$("#left-well").children().css("color", "blue")
+
+Give all the children of your #right-well element a color of orange.
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+
+  });
+</script>
+
+---------------------------------------------------------
