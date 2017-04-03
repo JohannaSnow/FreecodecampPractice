@@ -446,3 +446,31 @@ Make the second child in each of your well elements bounce. You must target the 
 </script>
 
 -----------------------------------------------------
+
+Target Even Numbered Elements Using jQuery
+-----------------------------------------------------
+You can also target all the even-numbered elements.
+
+Heres how you would target all the odd-numbered elements with class target and give them classes:
+
+$(".target:odd").addClass("animated shake");
+
+Note that jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element, fourth element, and so on.
+
+Try selecting all the even-numbered elements and giving them the classes of animated and shake.
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+
+  });
+</script>
