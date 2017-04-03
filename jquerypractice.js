@@ -415,3 +415,34 @@ Give all the children of your #right-well element a color of orange.
 </script>
 
 ---------------------------------------------------------
+
+Target a Specific Child of an Element Using jQuery
+
+----------------------------------------------------------------
+You've seen why id attributes are so convenient for targeting with jQuery selectors. But you won't always have such neat ids to work with.
+
+Fortunately, jQuery has some other tricks for targeting the right elements.
+
+jQuery uses CSS Selectors to target elements. target:nth-child(n) css selector allows you to select all the nth elements with the target class or element type.
+
+Heres how you would give the third element in each well the bounce class:
+
+$(".target:nth-child(3)").addClass("animated bounce");
+
+Make the second child in each of your well elements bounce. You must target the children of element with the target class.
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $(".target:nth-child(2)").addClass("animated bounce");
+
+  });
+</script>
+
+-----------------------------------------------------
