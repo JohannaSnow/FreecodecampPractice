@@ -474,3 +474,33 @@ Try selecting all the even-numbered elements and giving them the classes of anim
 
   });
 </script>
+----------------------------------------------
+
+Use jQuery to Modify the Entire Page
+---------------------------------------------------
+We're done playing with our jQuery playground. Let's tear it down!
+
+jQuery can target the body element as well.
+
+Heres how we would make the entire body fade out: $("body").addClass("animated fadeOut");
+
+But lets do something more dramatic. Add the classes animated and hinge to your body element.
+
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    $("body").addClass("animated hinge");
+
+  });
+</script>
