@@ -282,3 +282,23 @@ Change the button with id target4 by emphasizing its text.
 
   });
 </script>
+
+
+Remove an Element Using jQuery
+----------------------------------------
+Now lets remove an HTML element from your page using jQuery.
+
+jQuery has a function called .remove() that will remove an HTML element entirely
+
+Remove element target4 from the page by using the .remove() function.
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+  });
+</script>
+
+-------------------------------------------
