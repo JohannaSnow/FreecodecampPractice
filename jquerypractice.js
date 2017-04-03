@@ -273,3 +273,12 @@ $("h3").html("<em>jQuery Playground</em>");
 jQuery also has a similar function called .text() that only alters text without adding tags. In other words, this function will not evaluate any HTML tags passed to it, but will instead treat it as the text you want to replace the existing content with.
 
 Change the button with id target4 by emphasizing its text.
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target4").html("<em>#target4</em>");
+
+  });
+</script>
