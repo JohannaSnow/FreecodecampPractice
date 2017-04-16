@@ -282,3 +282,14 @@ Change the 0.0 so that product will equal 5.0.
 var product = 2.0 * 2.5;
 
 --------------------------------------------------
+
+Divide one Decimal by Another with JavaScript
+--------------------------------------------------
+Now let's divide one decimal by another.
+
+Instructions
+Change the 0.0 so that quotient will equal to 2.2.
+
+var quotient = 4.4 / 2.0;
+
+-----------------------------------------------------
