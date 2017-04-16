@@ -166,3 +166,20 @@ Example
 myVar = 12 - 6; // assigned 6
 Instructions
 Change the 0 so the difference is 12.
+
+var difference = 45 - 33;
+
+-----------------------------------------
+Multiply Two Numbers with JavaScript
+We can also multiply one number by another.
+
+JavaScript uses the * symbol for multiplication of two numbers.
+
+Example
+
+myVar = 13 * 13; // assigned 169
+Instructions
+Change the 0 so that product will equal 80.
+
+var product = 8 * 10;
+---------------------------------------------
