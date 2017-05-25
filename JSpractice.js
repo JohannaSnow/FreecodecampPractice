@@ -439,3 +439,16 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 
 Note
 Don't worry too much about the function and return statements as they will be covered in future challenges. For now, only use operators that you have already learned.
+
+function convertToF(celsius) {
+  var fahrenheit;
+  // Only change code below this line
+  fahrenheit = (celsius * (9/5)) + 32; // fahrenheit = celsius * 9/5 + 32 works too.
+  // Only change code above this line;
+
+  // Only change code above this line
+  return fahrenheit;
+}
+
+// Change the inputs below to test your code
+convertToF(30);
